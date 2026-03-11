@@ -33,9 +33,50 @@ Our dashboard solves these problems by consolidating alerts into a **single, int
 - **Version Control:** Git & GitHub
 
 ---
-
 ## Installation & Running Locally
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+
+### 1. Clone the Repository
+Yes! Start by cloning the repository to your local machine:
+
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+```
+
+## 2. Set Up a Virtual Environment (Optional)
+
+```bash
+python -m venv venv        # Create virtual environment
+source venv/bin/activate   # Activate on macOS/Linux
+venv\Scripts\activate      # Activate on Windows
+```
+### 3. Install Dependencies
+
+After activating your virtual environment, you need to install all the required Python packages that your application depends on. This ensures your app runs correctly without missing libraries.
+
+If your project includes a `requirements.txt` file, simply run:
+
+```bash
+pip install -r requirements.txt
+```
+### 4. Run the Application
+
+Start the app by running:
+
+```bash
+python app.py
+```
+The terminal will show the local URL, usually: http://127.0.0.1:5000/
+
+### 5. Open in Browser
+
+Yes! Open your browser and navigate to:
+
+http://127.0.0.1:5000/
+
+You should now see your SOC Alert Dashboard running successfully.
+
+
+
+
+
