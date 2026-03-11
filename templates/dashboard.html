@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SOC Alert Dashboard</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="header">
+<h1>SOC Alert Dashboard</h1>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>Total Alerts</h2>
+<div class="total-number">{{ total }}</div>
+</div>
+
+<div class="card">
+<h2>Top Alert Types</h2>
+
+{% for alert,count in alerts %}
+<div class="list">
+<div class="list-item">
+<span>{{alert}}</span>
+<span>{{count}}</span>
+</div>
+<div class="bar">
+<div class="bar-fill" style="width:{{count}}px"></div>
+</div>
+</div>
+{% endfor %}
+
+</div>
+
+<div class="card">
+<h2>Severity Levels</h2>
+
+{% for level,count in levels.items() %}
+<div class="list-item">
+<span>Level {{level}}</span>
+<span>{{count}}</span>
+</div>
+{% endfor %}
+
+</div>
+
+<div class="card">
+<h2>Agents</h2>
+
+{% for agent,count in agents.items() %}
+<div class="list-item">
+<span>{{agent}}</span>
+<span>{{count}}</span>     
+</div>
+{% endfor %}
+
+</div>
+
+</div>
+
+</body>
+</html>

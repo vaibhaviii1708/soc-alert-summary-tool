@@ -1,0 +1,140 @@
+/* ===== GLOBAL PAGE STYLE ===== */
+
+body{
+background:#0b1220;
+color:#cbd5e1;
+font-family:"Segoe UI",Arial,sans-serif;
+margin:0;
+padding:0;
+}
+
+/* ===== HEADER ===== */
+
+.header{
+padding:24px 40px;
+background:#0b1220;
+border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.header h1{
+margin:0;
+font-size:36px;
+font-weight:800;
+color:#ffffff;
+letter-spacing:0.5px;
+}
+
+/* ===== DASHBOARD GRID ===== */
+
+.container{
+padding:35px;
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+gap:28px;
+}
+
+/* ===== DASHBOARD CARDS ===== */
+
+.card{
+background:#131c2e;
+border-radius:12px;
+padding:26px;
+border:1px solid rgba(255,255,255,0.05);
+box-shadow:
+0 8px 20px rgba(0,0,0,0.45),
+inset 0 1px 0 rgba(255,255,255,0.03);
+transition:all 0.25s ease;
+}
+
+.card:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* ===== CARD TITLES ===== */
+
+.card h2{
+margin:0 0 18px 0;
+font-size:22px;
+font-weight:700;
+color:#ffffff;
+letter-spacing:0.3px;
+border-bottom:1px solid rgba(255,255,255,0.08);
+padding-bottom:12px;
+}
+
+/* ===== TOTAL ALERT CARD ===== */
+
+.card:first-child{
+text-align:center;
+}
+
+/* ===== BIG TOTAL NUMBER ===== */
+
+.total-number{
+font-size:100px;
+font-weight:800;
+color:#e2e8f0;
+letter-spacing:2px;
+margin-top:20px;
+}
+
+/* ===== LIST ITEMS (ALERT TYPES, SEVERITY ETC) ===== */
+
+.list{
+margin-top:12px;
+}
+
+.list-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 0;
+font-size:17px;   /* increased */
+font-weight:500;
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+/* ===== ALERT BARS ===== */
+
+.bar{
+height:7px;
+background:#1e293b;
+border-radius:6px;
+margin-top:6px;
+overflow:hidden;
+}
+
+.bar-fill{
+height:7px;
+background:linear-gradient(90deg,#38bdf8,#60a5fa);
+border-radius:6px;
+}
+
+/* ===== AGENT LIST ===== */
+
+.agent{
+display:flex;
+justify-content:space-between;
+padding:10px 0;
+font-size:17px;   /* increased */
+font-weight:500;
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+/* ===== SMALL UI IMPROVEMENTS ===== */
+
+ul{
+padding-left:0;
+list-style:none;
+margin:0;
+}
+
+li{
+margin:8px 0;
+}
+
+*{
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+}
