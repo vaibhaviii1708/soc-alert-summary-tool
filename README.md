@@ -27,16 +27,16 @@ Our dashboard solves these problems by consolidating alerts into a **single, int
 ---
 
 ## Technology Stack
-- **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** Python (Flask) / Node.js (Optional)  
-- **Data Storage:** MongoDB / JSON (for demo)  
+- **Frontend:** HTML, CSS 
+- **Backend:** Python (Flask)  
+- **Data Storage:** JSON 
 - **Version Control:** Git & GitHub
 
 ---
 ## Installation & Running Locally
 
 ### 1. Clone the Repository
-Yes! Start by cloning the repository to your local machine:
+Start by cloning the repository to your local machine:
 
 ```bash
 git clone https://github.com/yourusername/your-repo-name.git
